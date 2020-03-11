@@ -76,9 +76,7 @@ function temperatureCtoF(celsius) {
 */
 function temperatureInF(temp, unit) {
   if (unit === `F`) return `${temp}${unit}`;
-  //return `${(temperatureCtoF(temp))}${unit}`;
-  let fahrenheit = temperatureCtoF(temp);
-  return `${fahrenheit}${unit}`;
+  return `${temperatureCtoF(temp)}F`;
 }
 
 
