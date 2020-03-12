@@ -162,7 +162,7 @@ function appleIndex(arr) {
 */
 function isItAnApple(arr) {
   const newArr = [];
-  for (let i = 0; i <= arr.length - 1; i++){
+  for (let i = 0; i < arr.length; i++){
     newArr[i] = (arr[i] === "apple");
   }
   return newArr;
@@ -223,7 +223,7 @@ function get3rdCar(inventory) {
  * it will return `This is a Lincoln Navigator`.
 */
 function getCarInfoByIndex(inventory, index) {
-  /* code here */
+  return `This is a ${inventory[index].car_make} ${inventory[index].car_model}.`;
 }
 
 /**
